@@ -115,8 +115,6 @@ namespace Dungeon
 
                             break;
 
-                        //Player Info
-
                         case ConsoleKey.C:
 
                             Console.WriteLine("Player Info");
@@ -126,17 +124,12 @@ namespace Dungeon
 
                             break;
 
-
-                        //Monster Info
-
                         case ConsoleKey.M:
 
                             Console.WriteLine("Monster Info");
                             Console.WriteLine(monster);
 
                             break;
-
-                        //Exit
 
                         case ConsoleKey.X:
                         case ConsoleKey.E:
@@ -340,7 +333,7 @@ namespace Dungeon
             do
             {
                 
-                Monster curseoftheking = new Monster("Kings Curse", 90,90,55,30,10,30,"The woman who has been guiding you on your quest.... Was she the queen? or did she take over the queens body?");
+                Monster curseoftheking = new Monster("Kings Curse", 90, 90, 65, 30, 15, 30, "The woman who has been guiding you on your quest.... Was she the queen? or did she take over the queens body?");
 
                 Monster[] monsters = { curseoftheking };
 
