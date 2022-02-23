@@ -7,6 +7,7 @@ using DungeonLibrary;
 using MonsterLibrary;
 
 
+
 namespace Dungeon
 {
     class Branded
@@ -20,30 +21,33 @@ namespace Dungeon
             int score = 0;
 
             Weapon shortsword = new Weapon(1, 8, "Short Sword", 10, true);
-
+            
             Player player = new Player(playerName, 65, 45, 50, 50, shortsword);
 
             Console.Clear();
-            Console.WriteLine("Castle Prolymeus. A long since abandoned underground castle, nestled in a large cave system. Rumors and local stories say that once a great and powerful king held power over this land from that castle. " +
-                "But, without warning the castle grew dark and the kingdom fell into ruin. You however yearn for the answers. A kingdom doesn't just disapear over night and surely there is some treasure to be had?");
+            Console.WriteLine("Castle Prolymeus. A long since abandoned underground castle, nestled in a large cave system.\nRumors and local stories say that once a great and powerful king held power over this land from that castle. " +
+                "\nBut, without warning the castle grew dark and the kingdom fell into ruin. You however yearn for the answers.\nA kingdom doesn't just disapear over night and surely there is some treasure to be had?");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("I've finally come upon the castle, a large road made of stone stretches from the mouth of this cave up to the castles main entrance. On either side there is water leading all the way to the walls of the " +
-                "cave. The castle is large with a flat rounded top, a spiral staircase leads up this castles spire. It's too dark to make out finer details but you can FEEL this castles magnificence from where you stand.");
+            Console.WriteLine("I've finally come upon the castle, a large road made of stone stretches from the mouth of this cave up to the castles\nmain entrance.\nOn either side there is water leading all the way to the walls of the " +
+                "cave. The castle is large with a flat rounded top, a spiral staircase leads up this castles spire.\nIt's too dark to make out finer details but you can FEEL this castles magnificence from where you stand.");
             Console.ReadKey();
             Console.WriteLine("........");
             Console.WriteLine("Better get moving, the air feels like its getting colder..... Must be the water.");
             Console.ReadKey();
-            Console.WriteLine("I've made it inside of the castle, the entrance is grand and well decorated. There is no sign of a single soul having been here in ages. I begin to take a few steps forward and suddenly a voice appears, it " +
+            Console.WriteLine("I've made it inside of the castle, the entrance is grand and well decorated. There is no sign of a single soul having\nbeen here in ages.\nI begin to take a few steps forward and suddenly a voice appears, it " +
                 "consumes my thoughts, it's not a voice you can hear but it's a voice that is felt");
             Console.WriteLine("Branded one..... You return to this cursed castle seeking what? Treasure? Glory?...... Or maybe something more?");
             Console.ReadKey();
-            Console.WriteLine("It's a womans voice, so soft a delicate, but it almost has a haunting feel to it. I try to call out to answer her but the words can't escape. I can't move a muscle almost as if I was chained to my surroundings.");
+            Console.WriteLine("It's a womans voice, so soft a delicate, but it almost has a haunting feel to it. I try to call out to answer her\nbut the words can't escape.\nI can't move a muscle almost as if I was chained to my surroundings.");
             Console.ReadKey();
             Console.WriteLine("Ascend the castle. Go to the very top of the spire and you will find whatever it is that you seek. But be weary Branded one, you might not like what you find within this castle.");
             Console.ReadKey();
-            Console.WriteLine("My muscles feel released. The voice is gone but now the air is even cooler than it was before. Who was that woman? Guess there is only one way to find out.");
+            Console.WriteLine("My muscles feel released. The voice is gone but now the air is even cooler than it was before.\nWho was that woman? Guess there is only one way to find out.");
+            Console.ReadKey();
             Console.WriteLine("I guess I'll start by exploring this first floor and then making my way up.");
+            Console.ReadKey();
+            Console.Clear();
 
 
 
@@ -79,6 +83,7 @@ namespace Dungeon
                         "R) Run Away\n" +
                         "C) Character Info\n" +
                         "M) Monster Info\n" +
+                        "I) Inventory\n" +
                         "X) Exit\n");
                     ConsoleKey userChoice = Console.ReadKey(true).Key;
 
@@ -131,6 +136,10 @@ namespace Dungeon
 
                             break;
 
+                        case ConsoleKey.I:
+                            Console.WriteLine(InventoryRecord);
+                            break;
+
                         case ConsoleKey.X:
                         case ConsoleKey.E:
 
@@ -165,14 +174,26 @@ namespace Dungeon
 
             } while (!exit && score < 10); 
 
-            Console.WriteLine("You have reached the second floor of the castle, you feel more comfortable fighting monsters now and your strength seems to have grown.");
+            Console.WriteLine("You have reached the second floor of the castle, you feel more comfortable fighting monsters now\nand your strength seems to have grown.");
             Weapon greatsword = new Weapon(10, 25, "Dragon Slayer", 15, true);
-            Player player2 = new Player(playerName, 70, 50, 60, 60, greatsword);
             Console.ReadKey();
             Console.WriteLine("There's supposed to be a total of four floors in this castle and the staircase leading up the spire is on the third floor.");
             Console.WriteLine("You see what appears to be an armory down the hall a bit, I'm sure no one would miss it if you took a better weapon for yourself");
             Console.ReadKey();
-            Console.WriteLine("The armory is almost entirely empty..... Except for a large great sword leaning up against the wall. No it's much too large to be called a sword it's more like a large hunk of iron. You pick up the great sword and the weight of this blade seems almost familiar. You've never wielded a blade like this before however.");
+            Console.WriteLine("The armory is almost entirely empty..... Except for a large great sword leaning up against the wall.\nNo it's much too large to be called a sword it's more like a large hunk of iron. You go to pick up the great sword and the weight of this blade seems almost familiar.\nYou've never wielded a blade like this before however.");
+            Console.ReadKey();
+            Console.WriteLine("Would you like to take the great sword?");
+            Console.WriteLine("Y|N");
+            ConsoleKey userchoice2 = Console.ReadKey(true).Key;
+            switch (userchoice2)
+            {
+                case ConsoleKey.Y:
+                    player.EquippedWeapon = greatsword;
+                    
+                    break;
+                case ConsoleKey.N:
+                    break;
+            }
             Console.Clear();
             Console.WriteLine("Upon exiting the room you see several monsters in the hallway, guess you'll be fighting your way up to that third floor.");
             Console.Clear();
