@@ -160,6 +160,8 @@ namespace Dungeon
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("YOU ARE DEAD");
+                        Console.WriteLine("You defeated " + score + " monster" + ((score == 1) ? "." : "s."));
+                        Console.WriteLine("The curse will continue......");
                         Console.ResetColor();
                         exit = true;
                     }
@@ -270,7 +272,8 @@ namespace Dungeon
                         case ConsoleKey.E:
 
                             Console.WriteLine("Thanks for playing!");
-
+                            Console.WriteLine("You defeated " + score + " monster" + ((score == 1) ? "." : "s."));
+                            Console.WriteLine("The curse will continue......");
                             exit = true;
 
                             break;
@@ -289,6 +292,8 @@ namespace Dungeon
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("YOU ARE DEAD");
+                        Console.WriteLine("You defeated " + score + " monster" + ((score == 1) ? "." : "s."));
+                        Console.WriteLine("The curse will continue......");
                         Console.ResetColor();
                         exit = true;
                     }
@@ -491,7 +496,8 @@ namespace Dungeon
                         case ConsoleKey.E:
 
                             Console.WriteLine("Thanks for playing!");
-
+                            Console.WriteLine("You defeated " + score + " monster" + ((score == 1) ? "." : "s."));
+                            Console.WriteLine("The curse will continue......");
                             exit = true;
 
                             break;
@@ -510,6 +516,8 @@ namespace Dungeon
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("YOU ARE DEAD");
+                        Console.WriteLine("You defeated " + score + " monster" + ((score == 1) ? "." : "s."));
+                        Console.WriteLine("The curse will continue......");
                         Console.ResetColor();
                         exit = true;
                     }
