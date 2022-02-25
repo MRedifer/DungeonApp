@@ -83,7 +83,6 @@ namespace Dungeon
                         "R) Run Away\n" +
                         "C) Character Info\n" +
                         "M) Monster Info\n" +
-                        "I) Inventory\n" +
                         "X) Exit\n");
                     ConsoleKey userChoice = Console.ReadKey(true).Key;
 
@@ -136,9 +135,7 @@ namespace Dungeon
 
                             break;
 
-                        case ConsoleKey.I:
-                            Console.WriteLine(InventoryRecord);
-                            break;
+
 
                         case ConsoleKey.X:
                         case ConsoleKey.E:
@@ -182,20 +179,11 @@ namespace Dungeon
             Console.ReadKey();
             Console.WriteLine("The armory is almost entirely empty..... Except for a large great sword leaning up against the wall.\nNo it's much too large to be called a sword it's more like a large hunk of iron. You go to pick up the great sword and the weight of this blade seems almost familiar.\nYou've never wielded a blade like this before however.");
             Console.ReadKey();
-            Console.WriteLine("Would you like to take the great sword?");
-            Console.WriteLine("Y|N");
-            ConsoleKey userchoice2 = Console.ReadKey(true).Key;
-            switch (userchoice2)
-            {
-                case ConsoleKey.Y:
-                    player.EquippedWeapon = greatsword;
-                    
-                    break;
-                case ConsoleKey.N:
-                    break;
-            }
+            Console.WriteLine("I'm sure no one would mind if I borrowed this.");
+            Player player2 = new Player(playerName, 65, 55, 70, 70, greatsword);
             Console.Clear();
             Console.WriteLine("Upon exiting the room you see several monsters in the hallway, guess you'll be fighting your way up to that third floor.");
+            Console.ReadKey();
             Console.Clear();
 
             do
@@ -322,11 +310,11 @@ namespace Dungeon
             Console.WriteLine("....... I can't move again");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("You have done well to make it this far Branded one..... you have one final task to complete before you can find the answers you seek......");
+            Console.WriteLine("You have done well to make it this far Branded one.....\nyou have one final task to complete before you can find the answers you seek......");
             Console.ReadKey();
             Console.WriteLine("Tell me Branded one, where did you come from before coming to this castle?");
             Console.ReadKey();
-            Console.WriteLine("What does she mean? I came from...... Where did I come from? Why am I here? My memory is so hazy, all I knew of was this castles story. How can there be nothing before this?");
+            Console.WriteLine("What does she mean? I came from...... Where did I come from? Why am I here?\nMy memory is so hazy, all I knew of was this castles story. How can there be nothing before this?");
             Console.ReadKey();
             Console.Clear();
             Console.WriteLine("Your journey has led to more questions than answers so far, I believe if you're able to pass the final test everything will be clear for you");
