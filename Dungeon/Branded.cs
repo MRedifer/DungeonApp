@@ -560,16 +560,16 @@ namespace Dungeon
             Console.WriteLine("You cannot shake the urge to reach for the crown... It's almost like it is drawing you in closer.");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("You reach for the crown and slowly go to place it on your head, as the crown touches your head the moonlight grows even brighter. The statue begins to crumble and the castle shakes.");
+            Console.WriteLine("You reach for the crown and slowly go to place it on your head, as the crown touches your head the moonlight grows even brighter. \nThe statue begins to crumble and the castle shakes.");
             Console.ReadKey();
             Console.Clear();
             Console.WriteLine("The pain in your head is gone and the memories begin to flood your mind. It's too much, it feels like your head is about to explode.");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("Everything stops. Everything is clear. This is your castle, YOU were the king. Once you were offered complete power in the form of the flames of creation and in your arrogance you accepted the flame not knowing what would follow.");
+            Console.WriteLine("Everything stops. Everything is clear. This is your castle, YOU were the king. \nOnce you were offered complete power in the form of the flames of creation and in your arrogance you accepted the flame not knowing what would follow.");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("Once you accepted the flame from the wanderer your kingdom fell to ruin, you were turned to stone and all your subjects to monsters. The flame cursed you to relive this night over and over. An endless " +
+            Console.WriteLine("Once you accepted the flame from the wanderer your kingdom fell to ruin, you were turned to stone and all your subjects to monsters. \nThe flame cursed you to relive this night over and over. An endless " +
                 "quest for answers you already know, and answers to a problem that you yourself caused.");
             Console.ReadKey();
             Console.Clear();
@@ -588,12 +588,12 @@ namespace Dungeon
             Console.Write("Press any key to continue.");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("Castle Prolymeus. A long since abandoned underground castle, nestled in a large cave system. Rumors and local stories say that once a great and powerful king held power over this land from that castle. " +
-                "But, without warning the castle grew dark and the kingdom fell into ruin. You however yearn for the answers. A kingdom doesn't just disapear over night and surely there is some treasure to be had?");
+            Console.WriteLine("Castle Prolymeus. A long since abandoned underground castle, nestled in a large cave system. \nRumors and local stories say that once a great and powerful king held power over this land from that castle. " +
+                "But, without warning the castle grew dark and the kingdom fell into ruin. You however yearn for the answers. \nA kingdom doesn't just disapear over night and surely there is some treasure to be had?");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("I've finally come upon the castle, a large road made of stone stretches from the mouth of this cave up to the castles main entrance. On either side there is water leading all the way to the walls of the " +
-                "cave. The castle is large with a flat rounded top, a spiral staircase leads up this castles spire. It's too dark to make out finer details but you can FEEL this castles magnificence from where you stand............");
+            Console.WriteLine("I've finally come upon the castle, a large road made of stone stretches from the mouth of this cave up to the castles main entrance. \nOn either side there is water leading all the way to the walls of the " +
+                "cave. \nThe castle is large with a flat rounded top, a spiral staircase leads up this castles spire. \nIt's too dark to make out finer details but you can FEEL this castles magnificence from where you stand............");
             Console.ReadKey();
             Console.Clear();
 
